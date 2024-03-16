@@ -13,6 +13,7 @@ import logo from "./logo.jpg";
 import todoList from "./todoList.png";
 import linkicon from "./link.png";
 import man from "./man.png";
+import AlarmApp from "./alarmapp.jpg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -38,6 +39,7 @@ export {
   TicTacToe,
   passGenerator,
   github,
+  AlarmApp,
   menu,
   close,
   css,
