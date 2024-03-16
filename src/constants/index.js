@@ -230,7 +230,7 @@ const projects = [
       }
     ],
     image: AlarmApp,
-    link: "alarmapp-shubhammishra.vercel.app"
+    link: "https://alarmapp-shubhammishra.vercel.app/"
   }
 ];
 
