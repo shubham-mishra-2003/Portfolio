@@ -16,6 +16,7 @@ import {
   git,
   school,
   threejs,
+  TaptapGame,
   codecraft,
   AlarmApp
 } from "../assets";
@@ -231,6 +232,27 @@ const projects = [
     ],
     image: AlarmApp,
     link: "https://alarmapp-shubhammishra.vercel.app/"
+  },
+  {
+    name: "Tap Tap Game App",
+    description:
+      "Developed an engaging tap tap game using Vite React JS, where players tap circles to increase their score. Implemented local storage for score persistence across sessions, providing users with a seamless gaming experience. Additionally, integrated a leaderboard feature to showcase top scores and foster healthy competition among players. Enhanced user engagement through dynamic gameplay and customizable options",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "Vite",
+        color: "green-text-gradient"
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient"
+      }
+    ],
+    image: TaptapGame,
+    link: "https://taptapgame-shubhammishra.vercel.app/"
   }
 ];
 
