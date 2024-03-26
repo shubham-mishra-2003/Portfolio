@@ -37,4 +37,3 @@ const EarthCanvas = () => {
   );
 };
 export default EarthCanvas;
-y7
