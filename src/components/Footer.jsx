@@ -54,7 +54,7 @@ const Footer = () => {
         </a>
         <a
           className="downloadbtn"
-          href="https://drive.google.com/file/d/1jo62ONjB1rqS4Aw0mYNg5_LN3_yHhAkd/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1T3jv5q0kIHFo63mhfRvXhsYMjHR1BEGq/view?usp=sharing"
           target="_main"
         >
           Resume
