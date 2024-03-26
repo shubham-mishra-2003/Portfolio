@@ -1,10 +1,8 @@
-import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
 import { styles } from "../style";
 import { linkicon } from "../assets";
 import { SectionWraper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn} from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -15,13 +13,7 @@ const ProjectCard = ({
   link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+      <div
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
@@ -56,23 +48,22 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
-    </motion.div>
+      </div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <p className={styles.sectionSubText}>what i made.</p>
         <h2 className={styles.sectionHeadText} style={{ color: "#00aff0" }}>
           Projects
         </h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p
+        <p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
@@ -81,7 +72,7 @@ const Works = () => {
           Three.js, React.js, and the modern styling of Tailwind CSS to create
           these projects. Each one represents a unique blend of creativity and
           technical expertise.
-        </motion.p>
+        </p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
