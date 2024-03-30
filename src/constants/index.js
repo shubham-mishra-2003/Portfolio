@@ -210,7 +210,7 @@ const projects = [
       }
     ],
     image: codecraft,
-    link: "https://code-craft-sigma.vercel.app/"
+    link: "https://connect-codecraft.vercel.app/"
   },
   {
     name: "Alarm App",
