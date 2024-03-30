@@ -14,7 +14,7 @@ const Hero = () => {
         <div>
           <div className="flex">
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I&apos;m{" "}
+              Hi, I&apos;m
               <span className="text-[#00aff0]">Shubham mishra</span>
             </h1>
           </div>
@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
 
       <div className="flex xl:mt-[-170px] justify-center">
-        <img src={man} className=" h-[250px]" />
+        <img src={man} className="h-[250px]" />
       </div>
     </section>
   );
