@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="flex">
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I&apos;m
-              <span className="text-[#00aff0]">Shubham mishra</span>
+              <span className="text-[#00aff0]"> Shubham mishra</span>
             </h1>
           </div>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>

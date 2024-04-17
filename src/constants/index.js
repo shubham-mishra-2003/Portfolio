@@ -18,7 +18,8 @@ import {
   threejs,
   TaptapGame,
   codecraft,
-  AlarmApp
+  AlarmApp,
+  Videobridge
 } from "../assets";
 
 const navLinks = [
@@ -253,6 +254,27 @@ const projects = [
     ],
     image: TaptapGame,
     link: "https://taptapgame-shubhammishra.vercel.app/"
+  }
+  {
+    name: "Video Bridge",
+    description:
+      "Video meeting web app built with nextjs and tailwind css to handle the frontend and clerk and getstream.io Api for backend support",
+    tags: [
+      {
+        name: "NextJS",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient"
+      },
+      {
+        name: "APIs",
+        color: "blue-text-gradient"
+      }
+    ],
+    image: TaptapGame,
+    link: "https://videobridge.vercel.app/"
   }
 ];
 
