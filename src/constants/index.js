@@ -254,7 +254,7 @@ const projects = [
     ],
     image: TaptapGame,
     link: "https://taptapgame-shubhammishra.vercel.app/"
-  }
+  },
   {
     name: "Video Bridge",
     description:
