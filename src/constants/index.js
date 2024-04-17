@@ -273,7 +273,7 @@ const projects = [
         color: "blue-text-gradient"
       }
     ],
-    image: TaptapGame,
+    image: Videobridge,
     link: "https://videobridge.vercel.app/"
   }
 ];
