@@ -26,7 +26,13 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
+      <a
+        href="https://drive.google.com/file/d/12xtQfqm4WIIKWuWi64Y3tN6BQwEUMVVq/view?usp=sharing"
+        target="_main"
+        className="text-white-100 px-10 py-5 ml-28 font-extrabold border-white border-2 rounded-2xl"
+      >
+        Resume
+      </a>
       <div className="flex xl:mt-[-170px] justify-center">
         <img src={man} className="h-[250px]" />
       </div>
