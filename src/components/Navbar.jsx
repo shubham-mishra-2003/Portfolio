@@ -14,7 +14,7 @@ const Navbar = () => {
         padding: "10px 20px",
         background: "transparent",
         backgroundColor: "rgba(0, 49, 89, 0.8)",
-        borderBottom: "2px solid #00aff0",
+        borderBottom: "2px solid #00aff0"
       }}
     >
       <div
@@ -23,7 +23,7 @@ const Navbar = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          width: "100%",
+          width: "100%"
         }}
       >
         <Link
@@ -41,23 +41,32 @@ const Navbar = () => {
             className="box-content flex rounded-full w-40 box-border sm:w-100 mr"
           />
         </Link>
-
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } text-[18px] font-medium cursor-pointer`}
-              onClick={() => {
-                setActive(link.title);
-              }}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-            
-          ))}
-        </ul>
+        <div className="flex gap-3 justify-center items-center">
+          <ul className="list-none hidden sm:flex flex-row gap-10">
+            {navLinks.map(link =>
+              <li
+                key={link.id}
+                className={`${active === link.title
+                  ? "text-white"
+                  : "text-secondary"} text-[18px] font-medium cursor-pointer`}
+                onClick={() => {
+                  setActive(link.title);
+                }}
+              >
+                <a href={`#${link.id}`}>
+                  {link.title}
+                </a>
+              </li>
+            )}
+          </ul>
+          <a
+            href="https://drive.google.com/file/d/12xtQfqm4WIIKWuWi64Y3tN6BQwEUMVVq/view?usp=sharing"
+            target="_main"
+            className="p-1 bg-blue-500 rounded-md"
+          >
+            Resume
+          </a>
+        </div>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -69,28 +78,37 @@ const Navbar = () => {
           <div
             style={{
               background: "linear-gradient(to top left, #004863, #002d55)",
-              borderRadius: "20px",
+              borderRadius: "20px"
             }}
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-5 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounder-xl`}
+            className={`${!toggle
+              ? "hidden"
+              : "flex"} p-5 flex flex-col gap-2 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounder-xl`}
           >
             <ul className="list-none flex jusify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
+              {navLinks.map(link =>
                 <li
                   key={link.id}
-                  className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } hover:text-blue-500 text-[16px] font-medium cursor-pointer`}
+                  className={`${active === link.title
+                    ? "text-white"
+                    : "text-secondary"} hover:text-blue-500 text-[16px] font-medium cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`#${link.id}`}>
+                    {link.title}
+                  </a>
                 </li>
-              ))}
+              )}
             </ul>
+            <a
+              href="https://drive.google.com/file/d/12xtQfqm4WIIKWuWi64Y3tN6BQwEUMVVq/view?usp=sharing"
+              target="_main"
+              className=""
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>
