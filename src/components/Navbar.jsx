@@ -62,7 +62,7 @@ const Navbar = () => {
           <a
             href="https://drive.google.com/file/d/12xtQfqm4WIIKWuWi64Y3tN6BQwEUMVVq/view?usp=sharing"
             target="_main"
-            className="p-1 bg-blue-500 rounded-md"
+            className="p-1 hidden md:block bg-blue-500 rounded-md"
           >
             Resume
           </a>
