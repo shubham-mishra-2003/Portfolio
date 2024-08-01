@@ -16,6 +16,7 @@ import man from "./man.png";
 import AlarmApp from "./alarmapp.jpg";
 import TaptapGame from "./taptapgame.png";
 import Videobridge from "./videobridge.jpg";
+import FrameMagic from "./framemagic.png";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -59,4 +60,5 @@ export {
   linkicon,
   man,
   codecraft,
+  FrameMagic
 };

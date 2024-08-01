@@ -19,7 +19,8 @@ import {
   TaptapGame,
   codecraft,
   AlarmApp,
-  Videobridge
+  Videobridge,
+  FrameMagic
 } from "../assets";
 
 const navLinks = [
@@ -275,6 +276,27 @@ const projects = [
     ],
     image: Videobridge,
     link: "https://videobridge.vercel.app/"
+  },
+  {
+    name: "Frame Magic",
+    description:
+      "Developed a responsive image manipulation website using Next.js and Tailwind CSS, incorporating advanced AI tools such as Object Remover, Object Recolor, Image Restore, Image Resize, and Background Remove, powered by Cloudinary. Implemented a robust backend with MongoDB to store user-edited images, ensuring users can access their edits at any time. Integrated secure login functionality using Clerk to enhance user authentication and experience.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "green-text-gradient"
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "APIs",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: FrameMagic,
+    link: "https://framemagic-connect.vercel.app/"
   }
 ];
 
