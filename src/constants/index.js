@@ -300,4 +300,6 @@ const projects = [
   }
 ];
 
-export { navLinks, services, technology, experience, projects };
+const Resume = "https://drive.google.com/file/d/1pIx2hWL4ZoUjXBOGGkr3KbEnYeD7ksTT/view?usp=sharing";
+
+export { navLinks, services, technology, experience, projects, Resume };

@@ -1,3 +1,5 @@
+import { Resume } from "../constants";
+
 const Footer = () => {
   return (
     <footer
@@ -54,7 +56,7 @@ const Footer = () => {
         </a>
         <a
           className="downloadbtn"
-          href="https://drive.google.com/file/d/12xtQfqm4WIIKWuWi64Y3tN6BQwEUMVVq/view?usp=sharing"
+          href={Resume}
           target="_main"
         >
           Resume

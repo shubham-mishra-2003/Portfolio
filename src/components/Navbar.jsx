@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { navLinks } from "../constants/index";
+import { navLinks, Resume } from "../constants/index";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -38,29 +38,27 @@ const Navbar = () => {
             src={logo}
             style={{ boxShadow: "0px 2px 40px #00a6ff" }}
             alt="logo"
-            className="box-content flex rounded-full w-40 box-border sm:w-100 mr"
+            className="box-content flex rounded-full w-40 sm:w-100 mr"
           />
         </Link>
         <div className="flex gap-3 justify-center items-center">
           <ul className="list-none hidden sm:flex flex-row gap-10">
-            {navLinks.map(link =>
+            {navLinks.map((link) => (
               <li
                 key={link.id}
-                className={`${active === link.title
-                  ? "text-white"
-                  : "text-secondary"} text-[18px] font-medium cursor-pointer`}
+                className={`${
+                  active === link.title ? "text-white" : "text-secondary"
+                } text-[18px] font-medium cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`}>
-                  {link.title}
-                </a>
+                <a href={`#${link.id}`}>{link.title}</a>
               </li>
-            )}
+            ))}
           </ul>
           <a
-            href="https://drive.google.com/file/d/12xtQfqm4WIIKWuWi64Y3tN6BQwEUMVVq/view?usp=sharing"
+            href={Resume}
             target="_main"
             className="p-1 hidden md:block bg-blue-500 rounded-md"
           >
@@ -80,33 +78,27 @@ const Navbar = () => {
               background: "linear-gradient(to top left, #004863, #002d55)",
               borderRadius: "20px"
             }}
-            className={`${!toggle
-              ? "hidden"
-              : "flex"} p-5 flex flex-col gap-2 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounder-xl`}
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-5 flex flex-col gap-2 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounder-xl`}
           >
             <ul className="list-none flex jusify-end items-start flex-col gap-4">
-              {navLinks.map(link =>
+              {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${active === link.title
-                    ? "text-white"
-                    : "text-secondary"} hover:text-blue-500 text-[16px] font-medium cursor-pointer`}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } hover:text-blue-500 text-[16px] font-medium cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>
-                    {link.title}
-                  </a>
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
-              )}
+              ))}
             </ul>
-            <a
-              href="https://drive.google.com/file/d/12xtQfqm4WIIKWuWi64Y3tN6BQwEUMVVq/view?usp=sharing"
-              target="_main"
-              className=""
-            >
+            <a href={Resume} target="_main" className="">
               Resume
             </a>
           </div>
