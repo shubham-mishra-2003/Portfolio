@@ -301,8 +301,7 @@ const projects = [
 ];
 
 const links = {
-  resume:
-    "https://drive.google.com/file/d/1NUWsQRBrlRJh-9iJlfGpOXlT_OGEg52R/view?usp=sharing",
+  resume: '/resume.pdf',
   github: "https://github.com/shubham-mishra-2003",
   linkedIn: "https://www.linkedin.com/in/shubhammishra2511/",
   whatsApp: "https://wa.me/+919971481143/?text=Hi",
