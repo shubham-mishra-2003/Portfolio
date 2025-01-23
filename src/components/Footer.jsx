@@ -1,4 +1,4 @@
-import { Resume } from "../constants";
+import { links } from "../constants";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="social-buttons">
         <a
           target="_main"
-          href="https://github.com/shubham-mishra-2003"
+          href={links.github}
           className="social-button github"
         >
           <svg
@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
         <a
           target="_main"
-          href="https://www.linkedin.com/in/shubhammishra2511/"
+          href={links.linkedIn}
           className="social-button linkedin"
         >
           <svg
@@ -46,7 +46,7 @@ const Footer = () => {
         </a>
         <a
           target="_main"
-          href="https://wa.me/+919971481143/?text=This%20message%20is%20sent%20by%20clicking%20the%20link%20in%20your%20website."
+          href={links.whatsApp}
           className="social-button whatsapp"
         >
           <svg viewBox="0 0 16 16" className="socialSvg whatsappSvg">
@@ -56,7 +56,7 @@ const Footer = () => {
         </a>
         <a
           className="downloadbtn"
-          href={Resume}
+          href={links.resume}
           target="_main"
         >
           Resume

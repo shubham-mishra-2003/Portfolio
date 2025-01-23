@@ -20,84 +20,84 @@ import {
   codecraft,
   AlarmApp,
   Videobridge,
-  FrameMagic
+  FrameMagic,
 } from "../assets";
 
 const navLinks = [
   {
     id: "about",
-    title: "About"
+    title: "About",
   },
   {
     id: "skills",
-    title: "Skills"
+    title: "Skills",
   },
   {
     id: "project",
-    title: "project"
+    title: "project",
   },
   {
     id: "education",
-    title: "Education"
+    title: "Education",
   },
   {
     id: "contact",
-    title: "Contact"
-  }
+    title: "Contact",
+  },
 ];
 
 const services = [
   {
     title: "Web Developer",
-    icon: web
+    icon: web,
   },
   {
     title: "Computer science student",
-    icon: mobile
+    icon: mobile,
   },
   {
     title: "Programmer",
-    icon: backend
-  }
+    icon: backend,
+  },
 ];
 
 const technology = [
   {
     name: "HTML 5",
-    icon: html
+    icon: html,
   },
   {
     name: "CSS 3",
-    icon: css
+    icon: css,
   },
   {
     name: "JavaScript",
-    icon: javascript
+    icon: javascript,
   },
   {
     name: "TypeScript",
-    icon: typescript
+    icon: typescript,
   },
   {
     name: "React JS",
-    icon: reactjs
+    icon: reactjs,
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind
+    icon: tailwind,
   },
   {
     name: "Node JS",
-    icon: nodejs
+    icon: nodejs,
   },
   {
     name: "Three JS",
-    icon: threejs
+    icon: threejs,
   },
   {
     name: "git",
-    icon: git
-  }
+    icon: git,
+  },
 ];
 
 const experience = [
@@ -108,8 +108,8 @@ const experience = [
     iconBg: "#383E56",
     date: "Dec 2021 - August 2025",
     points: [
-      "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at HMR Institute of Technology and management, New Delhi. I have completed 4 semesters and have a CGPA of 8.1 . I have taken courses - Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, Programming in java, programming in C++, programming in C, among others. I am also a member of the Institute Innovation Council at HMRITM."
-    ]
+      "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at HMR Institute of Technology and management, New Delhi. I have completed 4 semesters and have a CGPA of 8.1 . I have taken courses - Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, Programming in java, programming in C++, programming in C, among others. I am also a member of the Institute Innovation Council at HMRITM.",
+    ],
   },
   {
     title: "12th Board",
@@ -118,8 +118,8 @@ const experience = [
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "I completed my class 12th education at Kamal model sr. sec. school, New Delhi, where i studied science non-medical and passed 10th CBSE board with 75.6%"
-    ]
+      "I completed my class 12th education at Kamal model sr. sec. school, New Delhi, where i studied science non-medical and passed 10th CBSE board with 75.6%",
+    ],
   },
   {
     title: "10th Board",
@@ -128,9 +128,9 @@ const experience = [
     iconBg: "#383E56",
     date: "March 2018 - April 2019",
     points: [
-      "I completed my class 10th education at Kamal model sr. sec. school, New Delhi, and passed 10th CBSE board with 80.1%."
-    ]
-  }
+      "I completed my class 10th education at Kamal model sr. sec. school, New Delhi, and passed 10th CBSE board with 80.1%.",
+    ],
+  },
 ];
 
 const projects = [
@@ -141,19 +141,19 @@ const projects = [
     tags: [
       {
         name: "HTML",
-        color: "blue-text-gradient"
+        color: "blue-text-gradient",
       },
       {
         name: "CSS",
-        color: "green-text-gradient"
+        color: "green-text-gradient",
       },
       {
         name: "JavaScript",
-        color: "pink-text-gradient"
-      }
+        color: "pink-text-gradient",
+      },
     ],
     image: todoList,
-    link: "https://shubham-mishra-2003.github.io/To-Do-List-shubham-mishra/"
+    link: "https://shubham-mishra-2003.github.io/To-Do-List-shubham-mishra/",
   },
   {
     name: "Tic-Tac-Toe Game",
@@ -162,15 +162,15 @@ const projects = [
     tags: [
       {
         name: "reactjs",
-        color: "blue-text-gradient"
+        color: "blue-text-gradient",
       },
       {
         name: "scss",
-        color: "pink-text-gradient"
-      }
+        color: "pink-text-gradient",
+      },
     ],
     image: TicTacToe,
-    link: "http://tictactoe.shubhammishra.surge.sh/"
+    link: "http://tictactoe.shubhammishra.surge.sh/",
   },
   {
     name: "Random Password Generator",
@@ -179,19 +179,19 @@ const projects = [
     tags: [
       {
         name: "HTML",
-        color: "blue-text-gradient"
+        color: "blue-text-gradient",
       },
       {
         name: "CSS",
-        color: "green-text-gradient"
+        color: "green-text-gradient",
       },
       {
         name: "JavaScript",
-        color: "pink-text-gradient"
-      }
+        color: "pink-text-gradient",
+      },
     ],
     image: passGenerator,
-    link: "https://shubham-mishra-2003.github.io/PasswordGenerator/"
+    link: "https://shubham-mishra-2003.github.io/PasswordGenerator/",
   },
   {
     name: "Code Craft | Code Editor",
@@ -200,19 +200,19 @@ const projects = [
     tags: [
       {
         name: "ReactJs",
-        color: "blue-text-gradient"
+        color: "blue-text-gradient",
       },
       {
         name: "Vite",
-        color: "green-text-gradient"
+        color: "green-text-gradient",
       },
       {
         name: "CSS",
-        color: "pink-text-gradient"
-      }
+        color: "pink-text-gradient",
+      },
     ],
     image: codecraft,
-    link: "https://connect-codecraft.vercel.app/"
+    link: "https://connect-codecraft.vercel.app/",
   },
   {
     name: "Alarm App",
@@ -221,19 +221,19 @@ const projects = [
     tags: [
       {
         name: "ReactJs",
-        color: "pink-text-gradient"
+        color: "pink-text-gradient",
       },
       {
         name: "Vite",
-        color: "green-text-gradient"
+        color: "green-text-gradient",
       },
       {
         name: "Tailwind",
-        color: "blue-text-gradient"
-      }
+        color: "blue-text-gradient",
+      },
     ],
     image: AlarmApp,
-    link: "https://alarmapp-shubhammishra.vercel.app/"
+    link: "https://alarmapp-shubhammishra.vercel.app/",
   },
   {
     name: "Tap Tap Game App",
@@ -242,19 +242,19 @@ const projects = [
     tags: [
       {
         name: "ReactJs",
-        color: "pink-text-gradient"
+        color: "pink-text-gradient",
       },
       {
         name: "Vite",
-        color: "green-text-gradient"
+        color: "green-text-gradient",
       },
       {
         name: "Tailwind",
-        color: "blue-text-gradient"
-      }
+        color: "blue-text-gradient",
+      },
     ],
     image: TaptapGame,
-    link: "https://taptapgame-shubhammishra.vercel.app/"
+    link: "https://taptapgame-shubhammishra.vercel.app/",
   },
   {
     name: "Video Bridge",
@@ -263,19 +263,19 @@ const projects = [
     tags: [
       {
         name: "NextJS",
-        color: "pink-text-gradient"
+        color: "pink-text-gradient",
       },
       {
         name: "Tailwind",
-        color: "green-text-gradient"
+        color: "green-text-gradient",
       },
       {
         name: "APIs",
-        color: "blue-text-gradient"
-      }
+        color: "blue-text-gradient",
+      },
     ],
     image: Videobridge,
-    link: "https://videobridge.vercel.app/"
+    link: "https://videobridge.vercel.app/",
   },
   {
     name: "Frame Magic",
@@ -284,22 +284,28 @@ const projects = [
     tags: [
       {
         name: "NextJS",
-        color: "green-text-gradient"
+        color: "green-text-gradient",
       },
       {
         name: "Tailwind",
-        color: "blue-text-gradient"
+        color: "blue-text-gradient",
       },
       {
         name: "APIs",
-        color: "pink-text-gradient"
-      }
+        color: "pink-text-gradient",
+      },
     ],
     image: FrameMagic,
-    link: "https://framemagic-connect.vercel.app/"
-  }
+    link: "https://framemagic-connect.vercel.app/",
+  },
 ];
 
-const Resume = "https://drive.google.com/file/d/1pIx2hWL4ZoUjXBOGGkr3KbEnYeD7ksTT/view?usp=sharing";
+const links = {
+  resume:
+    "https://drive.google.com/file/d/1NUWsQRBrlRJh-9iJlfGpOXlT_OGEg52R/view?usp=sharing",
+  github: "https://github.com/shubham-mishra-2003",
+  linkedIn: "https://www.linkedin.com/in/shubhammishra2511/",
+  whatsApp: "https://wa.me/+919971481143/?text=Hi",
+};
 
-export { navLinks, services, technology, experience, projects, Resume };
+export { navLinks, services, technology, experience, projects, links };

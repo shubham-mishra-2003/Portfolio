@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { navLinks, Resume } from "../constants/index";
+import { links, navLinks } from "../constants/index";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
         padding: "10px 20px",
         background: "transparent",
         backgroundColor: "rgba(0, 49, 89, 0.8)",
-        borderBottom: "2px solid #00aff0"
+        borderBottom: "2px solid #00aff0",
       }}
     >
       <div
@@ -23,7 +23,7 @@ const Navbar = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          width: "100%"
+          width: "100%",
         }}
       >
         <Link
@@ -58,7 +58,7 @@ const Navbar = () => {
             ))}
           </ul>
           <a
-            href={Resume}
+            href={links.resume}
             target="_main"
             className="p-1 hidden md:block bg-blue-500 rounded-md"
           >
@@ -76,7 +76,7 @@ const Navbar = () => {
           <div
             style={{
               background: "linear-gradient(to top left, #004863, #002d55)",
-              borderRadius: "20px"
+              borderRadius: "20px",
             }}
             className={`${
               !toggle ? "hidden" : "flex"
@@ -98,7 +98,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <a href={Resume} target="_main" className="">
+            <a href={links.resume} target="_main" className="">
               Resume
             </a>
           </div>
