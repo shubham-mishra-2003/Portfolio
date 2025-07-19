@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { links, navLinks } from "../constants/index";
+import { navLinks } from "../constants/index";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
         }}
       >
         <Link
-          to="/"
+          to=""
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -41,32 +41,25 @@ const Navbar = () => {
             className="box-content flex rounded-full w-40 sm:w-100 mr"
           />
         </Link>
-        <div className="flex gap-3 justify-center items-center">
-          <ul className="list-none hidden sm:flex flex-row gap-10">
-            {navLinks.map((link) => (
-              <li
-                key={link.id}
-                className={`${
-                  active === link.title ? "text-white" : "text-secondary"
-                } text-[18px] font-medium cursor-pointer`}
-                onClick={() => {
-                  setActive(link.title);
-                }}
-              >
-                <a href={`#${link.id}`}>{link.title}</a>
-              </li>
-            ))}
-          </ul>
-          <a
-            href={links.resume}
-            target="_main"
-            className="p-1 hidden md:block bg-blue-500 rounded-md"
-          >
-            Resume
-          </a>
-        </div>
+        <ul className="list-none hidden md:flex flex-row gap-10">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${
+                active === link.title ? "text-white" : "text-secondary"
+              } text-[18px] font-medium cursor-pointer`}
+              onClick={() => {
+                setActive(link.title);
+              }}
+            >
+              <a href={link.id} target={link.title == "Resume" && "_blank"}>
+                {link.title}
+              </a>
+            </li>
+          ))}
+        </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -94,13 +87,10 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={link.id}>{link.title}</a>
                 </li>
               ))}
             </ul>
-            <a href={links.resume} target="_main" className="">
-              Resume
-            </a>
           </div>
         </div>
       </div>

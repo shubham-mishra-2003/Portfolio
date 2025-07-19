@@ -17,6 +17,13 @@ import AlarmApp from "./alarmapp.jpg";
 import TaptapGame from "./taptapgame.png";
 import Videobridge from "./videobridge.jpg";
 import FrameMagic from "./framemagic.png";
+import nextjs from "./nextjs.png";
+import firebase from "./firebase.png";
+import sql from "./sql.png";
+import cloudinary from "./cloudinary.png";
+import electronjs from "./electronjs.png";
+import stenomaster from "./stenomaster.png";
+import dropshare from "./dropshare.jpg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -29,6 +36,7 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import Gmail from "./gmail.png";
 
 export {
   logo,
@@ -51,7 +59,6 @@ export {
   html,
   javascript,
   TaptapGame,
-  mongodb,
   nodejs,
   reactjs,
   tailwind,
@@ -60,5 +67,14 @@ export {
   linkicon,
   man,
   codecraft,
-  FrameMagic
+  FrameMagic,
+  Gmail,
+  nextjs,
+  firebase,
+  mongodb,
+  sql,
+  cloudinary,
+  electronjs,
+  stenomaster,
+  dropshare,
 };

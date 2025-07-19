@@ -41,7 +41,6 @@ const Contact = () => {
         () => {
           setLoading(false);
           alert("Thankyou. I will get back to you as soon as possible");
-
           setForm({
             name: "",
             email: "",
@@ -57,10 +56,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:flex-row flex-col justify-between items-center flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas />
+      </motion.div>
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="flex-1 w-full bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>contact</h3>
@@ -115,14 +120,6 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
-
     </div>
   );
 };
